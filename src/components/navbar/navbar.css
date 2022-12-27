@@ -1,0 +1,15 @@
+.Navbar{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 157, 216);
+}
+.BotonNav{
+     padding: 30px;
+     margin: 10px;
+}
+.boton{
+    background-color: rgb(240, 246, 247);
+    margin-right: 30px;
+}
