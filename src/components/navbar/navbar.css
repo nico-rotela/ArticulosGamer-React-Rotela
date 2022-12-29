@@ -10,6 +10,9 @@
      margin: 10px;
 }
 .boton{
+    font-size: 15px;
+    border-radius: 10px;
+    height: 50px;
     background-color: rgb(240, 246, 247);
     margin-right: 30px;
 }
