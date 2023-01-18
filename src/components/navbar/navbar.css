@@ -1,18 +1,10 @@
-.Navbar{
-    font-size: 30px;
+.navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgb(29, 157, 216);
 }
-.BotonNav{
-     padding: 30px;
-     margin: 10px;
-}
-.boton{
-    font-size: 15px;
-    border-radius: 10px;
-    height: 50px;
-    background-color: rgb(240, 246, 247);
-    margin-right: 30px;
+
+.links{
+    margin-right: 10px;
+    text-decoration: none;
 }
