@@ -1,30 +1,39 @@
 import {useState, useEffect} from "react"
-import { getProductos, getProductosByCategoria, getProductosByCategory } from "../asyncMock"
+import { getProductos, getProductosByCategoria, } from "../asyncMock"
 import ItemList from "../ItemList/ItemList"
 import {useParams} from 'react-router-dom'
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const {categoriaId} = useParams()
 
     useEffect(() => {
+        setLoading(true)
+    
         const asyncFunction = categoriaId ? getProductosByCategoria : getProductos
+        // si tengo categoriaId asyncFunction va a ser getProductosByCategoria si no lo tengo va a ser getProductos
+        // aca tendria resuelto el if
+  
+        asyncFunction(categoriaId).then(response => {
+            setProductos(response)
+        }).catch(error => {
+            console.log(error)
+        }).finally(() => {
+            setLoading(false)
+        })
+},[categoriaId])
 
-        asyncFunction(categoriaId)
-            .then(productos => {
-                setProductos(productos)
-            })
-            .catch(error =>{
-                console.log(error)
-            })
-    },[categoriaId])
+    if(loading){
+        return <h1>cargando productos...</h1>
+    }
 
 
 
     return (
         <div>
-            <h1>bienvenidos</h1>
+            <h2>bienvenidos</h2>
             <ItemList productos={productos}/>
         </div>
     )
