@@ -3,9 +3,9 @@ import "./Navbar.css"
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className="navbar">
             <Link to='/'>
-                <h1>ArticulosGamer</h1>
+                <h1 className="titulo">ArticulosGamer</h1>
             </Link>
             
             <div className="categorias">

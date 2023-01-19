@@ -2,9 +2,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(54, 51, 236);
 }
 
 .links{
     margin-right: 10px;
     text-decoration: none;
+    color: aliceblue;
 }
+
+.titulo{
+    color: aliceblue;
+}
+
