@@ -1,6 +1,5 @@
 const productos = [
     { 
-        
         "id":'1',
         "stock": 15,
         "foto": "/imagenes/MouseRedragon.jpg",
@@ -48,6 +47,14 @@ export const getProductosById = (id) => {
     return new Promise ((resolve) => {
         setTimeout(() =>{
             resolve(productos.find(prod => prod.id === id))
+        },500)
+    })
+}
+
+export const getProductByPrice = (precioId) => {
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve(productos.filter(prod => prod.precio === precioId))
         },500)
     })
 }

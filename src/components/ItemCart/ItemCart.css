@@ -1,0 +1,5 @@
+.Cart{
+    display: flex;
+    justify-content: space-around;
+    background-color: #dbd2d2e8;
+}
