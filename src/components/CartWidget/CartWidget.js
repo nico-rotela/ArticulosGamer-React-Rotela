@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
-const CartWidget = ({ quantity }) => {
+const CartWidget = ({ totalQuantity }) => {
     return (
         <Link to='/cart' className="navbar">
-            <img className="img links" src="/imagenes/ImgCarrito.png" alt="nombre"/>
-            { quantity }
+            <img className="img links" src="/imagenes/carritoImg.png" alt="nombre"/>
+            { totalQuantity }
         </Link>
     )
 }
