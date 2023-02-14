@@ -1,9 +1,9 @@
 import {useState, useEffect} from "react"
-// import { getProductos, getProductosByCategoria, } from "../asyncMock"
 import ItemList from "../ItemList/ItemList"
-import {useParams} from 'react-router-dom'
+import { useParams} from 'react-router-dom'
 import { getDocs, collection, query, where } from "firebase/firestore"
 import { db } from "../../services/firebase/FirebaseConfig"
+import "./ItemLisContainer.css"
 
 
 const ItemListContainer = () => {
@@ -54,7 +54,7 @@ const ItemListContainer = () => {
 
 
     return (
-        <div>
+        <div className="containerList">
             <h2>bienvenidos</h2>
             <ItemList productos={productos}/>
         </div>

@@ -10,7 +10,7 @@ const ItemCart = ({id, nombre, quantity, precio, count}) => {
             <h3>cantidad {count}</h3>
             <h3>precio unidad: ${precio}</h3>
             <h3>subtotal: $ {precio * count}</h3>
-            <button onClick={() => borrarItem(id)}>borrar</button>
+            <button onClick={() => borrarItem(id)} className="botonBorrar">borrar</button>
         </article>
     )
 }

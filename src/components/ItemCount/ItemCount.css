@@ -1,0 +1,35 @@
+.contador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonCount{
+    margin: 25px;
+    font-size: 20px;
+    background-color: #333533; 
+    border-radius: 6px;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    transition: all 0.25s;
+}
+
+.botonFuncion{
+    background-color: #4CAF50;
+    border-radius: 6px;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    transition: all 0.25s;
+}
+
+.botonFuncion:hover{
+    color: rgb(41, 41, 41);
+}

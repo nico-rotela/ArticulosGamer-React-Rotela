@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 const CartWidget = ({ totalQuantity }) => {
     return (
-        <Link to='/cart' className="navbar">
-            <img className="img links" src="/imagenes/carritoImg.png" alt="nombre"/>
+        <Link to='/cart' className="links botonCarrito">
+            <img className="img_links" src="/imagenes/carritoImg.png" alt="nombre"/>
             { totalQuantity }
         </Link>
     )

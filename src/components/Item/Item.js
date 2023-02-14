@@ -6,14 +6,12 @@ const Item = ({nombre, foto, precio, id}) => {
 
     return (
         <div className="container"> 
-        <div className="card">
-
-            <h4>{nombre}</h4>
-            <img src={foto} alt={nombre}/>
-            <p>$ {precio}</p>
-            <p>descripcion del objeto</p>
-            <Link to={`/detail/${id}`}>ver detalle</Link>
-        </div>
+            <div className="card">
+                <h4>{nombre}</h4>
+                <img src={foto} alt={nombre}/>
+                <p className="precio">$ {precio}</p>
+                <Link to={`/detail/${id}`} className="boton">ver detalle</Link>
+            </div>
         </div>
     )
 }

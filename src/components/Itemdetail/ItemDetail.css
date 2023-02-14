@@ -2,3 +2,20 @@
     width: auto;
     margin: 100px;
 }
+
+.botonTerminarCompra{
+    background-color: #1a1dda;
+    border-radius: 6px;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    transition: all 0.25s;
+}
+
+.botonTerminarCompra:hover {
+        transform: scale(1.1);
+
+}
